@@ -49,7 +49,6 @@ body {
 textarea {
   max-width: 400px;
   background-color: #111;
-
   color: #ccd6f6;
   letter-spacing: 1px;
 }
@@ -90,7 +89,8 @@ textarea {
 /* Begin Right Contact Page */
 .direct-contact-container {
   max-width: 400px;
-  float: right;
+  // float: right;
+  float: left;
   margin-top: 5px;
 }
 

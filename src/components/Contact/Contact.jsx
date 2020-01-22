@@ -192,7 +192,7 @@ const Contact = () => {
       <h1>Contact</h1>
       <section id="contact">
         <div class="contact-wrapper">
-          <form class="form-horizontal" onSubmit={submitForm}>
+          {/* <form class="form-horizontal" onSubmit={submitForm}>
             <div class="form-group">
               <div class="col-sm-12">
                 <input
@@ -241,7 +241,7 @@ const Contact = () => {
                 <span class="send-text">SEND</span>
               </div>
             </button>
-          </form>
+          </form> */}
 
           <div class="direct-contact-container">
             <ul class="contact-list">
@@ -255,7 +255,7 @@ const Contact = () => {
                 {" "}
                 <i class="fa fa-phone fa-2x">
                   <span class="contact-text phone">
-                    <a href="#" title="Give me a call">
+                    <a href="#" title="">
                       +33 6 67 62 89 32
                     </a>
                   </span>
@@ -265,7 +265,10 @@ const Contact = () => {
               <li class="list-item">
                 <i class="fa fa-envelope fa-2x">
                   <span class="contact-text gmail">
-                    <a href="mailto:#" title="Send me an email">
+                    <a
+                      href="mailto:julie.carra@live.fr"
+                      title="Send me an email"
+                    >
                       julie.carra@live.fr
                     </a>
                   </span>
@@ -274,22 +277,6 @@ const Contact = () => {
             </ul>
 
             <hr />
-            {/* <ul class="social-media-list">
-              <li>
-                <a
-                  href="/https://github.com/juliecarra"
-                  target="_blank"
-                  class="contact-icon"
-                >
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="/" target="_blank" class="contact-icon">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul> */}
             <div class="social-container">
               <ul class="social-icons">
                 <li>

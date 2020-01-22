@@ -1,13 +1,11 @@
 exports.handler = function(event, context, callback) {
-  require("dotenv").config();
   var nodemailer = require("nodemailer");
-
-  const payload = JSON.parse(event.body);
-
-  const { name, email, message } = payload;
 
   // Create the transporter with the required configuration for Gmail
   // change the user and pass !
+  const payload = JSON.parse(event.body);
+
+  const { name, email, message } = payload;
 
   var transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
