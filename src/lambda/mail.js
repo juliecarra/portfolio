@@ -13,7 +13,7 @@ exports.handler = function(event, context, callback) {
     secure: true, // use SSL
     auth: {
       user: "julie.marie.carra@gmail.com",
-      pass: "19121995"
+      pass: ""
     }
   });
 
