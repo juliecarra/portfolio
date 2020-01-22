@@ -1,0 +1,111 @@
+.About {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  &__container {
+    margin-left: 15%;
+  }
+
+  h1 {
+    display: flex;
+    align-items: flex-end;
+
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system,
+      system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial,
+      sans-serif;
+    color: #ccd6f6;
+    font-weight: bold;
+
+    &:before {
+      counter-increment: section 1;
+      content: "0" counter(section) ".";
+      margin-right: 10px;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+        "Lucida Console", Monaco, monospace;
+      font-weight: normal;
+      color: #ff2e97;
+      font-size: 20px;
+      position: relative;
+      bottom: 4px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: #2d3952;
+      position: relative;
+      top: -12px;
+      margin-left: 20px;
+    }
+  }
+  div {
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system,
+      system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial,
+      sans-serif;
+    color: #ccd6f6;
+  }
+
+  section {
+    width: 387px;
+  }
+
+  a {
+    color: #ff2e97;
+    text-decoration: none;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 200px));
+    overflow: hidden;
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-right: 150px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+        "Lucida Console", Monaco, monospace;
+      font-size: 12px;
+      color: #ccd6f6;
+      &:before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #ff2e97;
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .About h1:after {
+    width: 185px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+  .About h1:after {
+    width: 194px;
+  }
+  .About__container {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (min-device-width: 568px) and (max-device-width: 818px) and (orientation: landscape) {
+  .About {
+    margin-top: 50%;
+  }
+}
